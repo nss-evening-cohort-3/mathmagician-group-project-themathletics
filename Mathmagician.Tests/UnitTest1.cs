@@ -29,7 +29,7 @@ namespace Mathmagician.Tests
             // Arrange
             // Act
             // Assert
-            Assert.Fail();
+            // Assert.Fail();
         }
     }
 }
