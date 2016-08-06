@@ -12,7 +12,12 @@ namespace Mathmagician
         static void Main(string[] args)
         {
             Fib fib = new Fib();
-            Console.WriteLine(fib.CreateFibSequence(7));
+            var output = fib.CreateFibSequence(7);
+            foreach (var item in output)
+            {
+                Console.Write(item + " ");
+            }
+            Console.ReadKey();
         }
     }
 }

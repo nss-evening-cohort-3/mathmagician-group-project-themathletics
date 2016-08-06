@@ -11,10 +11,10 @@ namespace Mathmagician
         public List<int> CreateFibSequence(int user_input)
         
         {
-            List<int> outputList = new List<int> {0};
-            for (int i = 0; i < user_input; i++)
+            List<int> outputList = new List<int> {1, 1};
+            for (int i = 2; i < user_input; i++)
             {
-                outputList.Add(i+outputList.IndexOf(user_input-1));
+                outputList.Add(outputList.ElementAt(i - 2) + outputList.ElementAt(i - 1));
             }
             return outputList;
         } 
