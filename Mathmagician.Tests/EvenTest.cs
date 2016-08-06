@@ -10,7 +10,7 @@ namespace Mathmagician.Tests
         
 
         [TestMethod]
-        public void GiveBackEvensList()
+        public void GiveBackEvensList() //Checking that we are returning a list
         {
             // Arrange section
             Even myEven = new Even();
@@ -21,7 +21,7 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
-        public void GivesBackRightNumberOfEvens()
+        public void GivesBackRightNumberOfEvens() //Checking that list is the right size in number of numbers
         {
             // Arrange
             Even myEven = new Even();
@@ -31,5 +31,7 @@ namespace Mathmagician.Tests
             Assert.AreEqual(evensTestList.Count, 5);
 
         }
+
+
     }
 }
