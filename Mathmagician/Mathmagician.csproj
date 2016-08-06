@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fib.cs" />
     <Compile Include="Odd.cs" />
     <Compile Include="Integer.cs" />
     <Compile Include="Program.cs" />
