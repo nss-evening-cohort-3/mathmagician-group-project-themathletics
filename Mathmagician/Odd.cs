@@ -10,7 +10,7 @@ namespace Mathmagician
     {
         public List<int> CreateOddSequence(int user_input)
         {
-            var outputList = new List<int>();
+            List<int> outputList = new List<int>();
             for (int i = 0; i < user_input; i++)
             {
                 outputList.Add(i+i+1);

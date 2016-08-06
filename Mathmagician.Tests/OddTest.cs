@@ -11,22 +11,22 @@ namespace Mathmagician.Tests
         public void GiveBackList()
         {
             Odd myOddNum = new Odd();
-            var myList = myOddNum.CreateOddSequence(6);
+            List<int> myList = myOddNum.CreateOddSequence(6);
             Assert.IsInstanceOfType(myList, typeof(List<int>));
         }
         [TestMethod]
         public void GivesBackRightNumberOfNumbers()
         {
             Odd myOddNum = new Odd();
-            var myList = myOddNum.CreateOddSequence(6);
+            List<int> myList = myOddNum.CreateOddSequence(6);
             Assert.AreEqual(myList.Count, 6);
         }
         [TestMethod]
         public void CreateOddSequence()
         {
             Odd myOddNum = new Odd();
-            var myList = myOddNum.CreateOddSequence(4);
-            var expectedList = new List<int> { 1, 3, 5, 7 };
+            List<int> myList = myOddNum.CreateOddSequence(4);
+            List<int> expectedList = new List<int> { 1, 3, 5, 7 };
             CollectionAssert.AreEqual(myList, expectedList);
             Assert.AreEqual(myList.IndexOf(5), 2);
         }
