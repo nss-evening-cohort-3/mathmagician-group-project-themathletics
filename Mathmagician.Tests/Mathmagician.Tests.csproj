@@ -53,6 +53,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="FibTest.cs" />
+    <Compile Include="OddTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IntegerTest.cs" />

@@ -40,7 +40,7 @@ namespace Mathmagician.Tests
         }
     }
 }
-// new instance? Jurnell example??? And Kate's, review
+// new instance?
 // new list? 
 // new list of the right number? 
 // new list has the right values inside? 
