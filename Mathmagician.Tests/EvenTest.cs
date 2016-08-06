@@ -32,6 +32,37 @@ namespace Mathmagician.Tests
 
         }
 
+        [TestMethod]
+        public void EvensSequenceTest()
+        {
+            Even myEvens = new Even();
+            List<int> generatedEvensList = myEvens.CreateEvenSequence(2);
+            List<int> expectedEvensList = new List<int> {0,2};
+            CollectionAssert.AreEqual(generatedEvensList,expectedEvensList);
+
+
+        }
+
+        [TestMethod]
+        public void FirstValueTest()
+        {
+            Even myEvens = new Even();
+            List<int> firstNumberOfSequence = myEvens.CreateEvenSequence(1);
+            List<int> expectedFirstValue = new List<int> {0};
+            CollectionAssert.AreEqual(firstNumberOfSequence,expectedFirstValue);
+        }
+
+
+        [TestMethod]
+        public void SecondValueTest()
+        {
+            Even myEvens = new Even();
+            List<int> firstTwoNumbersInSequence = myEvens.CreateEvenSequence(2);
+            int expectedSecondValue = 2;
+            Assert.AreEqual(firstTwoNumbersInSequence[1], expectedSecondValue);
+
+        }
+
 
     }
 }
