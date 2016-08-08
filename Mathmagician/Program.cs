@@ -11,14 +11,13 @@ namespace Mathmagician
     {
         static void Main(string[] args)
         {
-            /*Fib fib = new Fib();
-            var output = fib.CreateFibSequence(7);
-            foreach (var item in output)
-            {
-                Console.Write(item + " ");
-            }
-            Console.ReadKey();
-            */
+            Console.WriteLine("What would you like for me to do?");
+            String user_command = Console.ReadLine().ToLower() + " ";
+            Console.WriteLine("How many should I print?");
+            string user_number = Console.ReadLine() + " ";
+            Console.WriteLine("Cool, I'm going to print " + user_number + user_command + "numbers.");
+
+            Console.ReadLine();
         }
     }
 }
