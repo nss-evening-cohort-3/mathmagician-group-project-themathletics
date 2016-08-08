@@ -10,7 +10,7 @@ namespace Mathmagician
     {
         public List<int> CreateEvenSequence(int user_integer)
         {
-            var evensList = new List<int>();
+            List<int> evensList = new List<int>();
             for (int i = 0; i < user_integer; i++)
             {
                 evensList.Add(i + i);

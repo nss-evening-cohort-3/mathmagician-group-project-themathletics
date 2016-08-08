@@ -10,7 +10,7 @@ namespace Mathmagician.Tests
         
 
         [TestMethod]
-        public void GiveBackEvensList() //Checking that we are returning a list
+        public void DoesThisGiveBackAnEvensList() //Checking that we are returning a list
         {
             // Arrange section
             Even myEven = new Even();
@@ -21,45 +21,45 @@ namespace Mathmagician.Tests
         }
 
         [TestMethod]
-        public void GivesBackRightNumberOfEvens() //Checking that list is the right size in number of numbers
+        public void DoesThisGiveBackRightNumberOfEvens() //Checking that list is the right size in number of numbers
         {
             // Arrange
             Even myEven = new Even();
             // Act
-           var evensTestList = myEven.CreateEvenSequence(5);
+           List<int> evensTestList = myEven.CreateEvenSequence(5);
             // Assert
             Assert.AreEqual(evensTestList.Count, 5);
 
         }
 
         [TestMethod]
-        public void EvensSequenceTest()
+        public void DoesThisGiveBackTheRightEvensValues()
         {
             Even myEvens = new Even();
-            List<int> generatedEvensList = myEvens.CreateEvenSequence(2);
-            List<int> expectedEvensList = new List<int> {0,2};
-            CollectionAssert.AreEqual(generatedEvensList,expectedEvensList);
+            List<int> myCodeGeneratedEvensList = myEvens.CreateEvenSequence(2);
+            List<int> testExpectedEvensList = new List<int> {0,2};
+            CollectionAssert.AreEqual(myCodeGeneratedEvensList,testExpectedEvensList);
 
 
         }
 
         [TestMethod]
-        public void FirstValueTest()
+        public void CorrectFirstValue()
         {
             Even myEvens = new Even();
-            List<int> firstNumberOfSequence = myEvens.CreateEvenSequence(1);
-            List<int> expectedFirstValue = new List<int> {0};
-            CollectionAssert.AreEqual(firstNumberOfSequence,expectedFirstValue);
+            List<int> firstNumberOfCodeGenSequence = myEvens.CreateEvenSequence(1);
+            List<int> testExpectedFirstValue = new List<int> {0};
+            CollectionAssert.AreEqual(firstNumberOfCodeGenSequence,testExpectedFirstValue);
         }
 
 
         [TestMethod]
-        public void SecondValueTest()
+        public void CorrectSecondValueTest()
         {
             Even myEvens = new Even();
-            List<int> firstTwoNumbersInSequence = myEvens.CreateEvenSequence(2);
+            List<int> firstTwoNumbersFromCodeGenSequence = myEvens.CreateEvenSequence(2);
             int expectedSecondValue = 2;
-            Assert.AreEqual(firstTwoNumbersInSequence[1], expectedSecondValue);
+            Assert.AreEqual(firstTwoNumbersFromCodeGenSequence[1], expectedSecondValue);
 
         }
 
