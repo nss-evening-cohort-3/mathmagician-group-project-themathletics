@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="PrimeTest.cs" />
     <Compile Include="FibTest.cs" />
     <Compile Include="OddTest.cs" />
     <Compile Include="EvenTest.cs" />
