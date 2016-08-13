@@ -28,7 +28,7 @@ namespace Mathmagician.Tests
             // Act
            List<int> primeTestList = myPrimes.CreatePrimeSequence(5);
             // Assert
-            Assert.AreEqual(primeTestList.Count, 6);
+            Assert.AreEqual(primeTestList.Count, 5);
 
         }
 
@@ -36,8 +36,8 @@ namespace Mathmagician.Tests
         public void DoesThisGiveBackTheRightPrimesValues()
         {
             Prime myPrimes = new Prime();
-            List<int> myCodeGeneratedPrimesList = myPrimes.CreatePrimeSequence(2);
-            List<int> testExpectedPrimesList = new List<int> {0,2};
+            List<int> myCodeGeneratedPrimesList = myPrimes.CreatePrimeSequence(5);
+            List<int> testExpectedPrimesList = new List<int> {2,3,5,7,11};
             CollectionAssert.AreEqual(myCodeGeneratedPrimesList,testExpectedPrimesList);
 
 
@@ -48,7 +48,7 @@ namespace Mathmagician.Tests
         {
             Prime myPrimes = new Prime();
             List<int> firstNumberOfCodeGenPrimeSequence = myPrimes.CreatePrimeSequence(1);
-            List<int> testExpectedFirstPrimeValue = new List<int> {0};
+            List<int> testExpectedFirstPrimeValue = new List<int> {2};
             CollectionAssert.AreEqual(firstNumberOfCodeGenPrimeSequence,testExpectedFirstPrimeValue);
         }
 
@@ -58,7 +58,7 @@ namespace Mathmagician.Tests
         {
             Prime myPrimes = new Prime();
             List<int> firstTwoNumbersFromCodeGenPrimeSequence = myPrimes.CreatePrimeSequence(2);
-            int expectedSecondPrimeValue = 2;
+            int expectedSecondPrimeValue = 3;
             Assert.AreEqual(firstTwoNumbersFromCodeGenPrimeSequence[1], expectedSecondPrimeValue);
 
         }
