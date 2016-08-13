@@ -64,27 +64,7 @@ namespace Mathmagician
             }
 
 
-            //List<int> confirmedPrimesList = new List<int> { 2 };
-            //for (int i = 3; i < user_integer; i += 2) //if statement to handle if user chooses 1,2,3
-            //{
-            //    double halfOfI = (i / 2);
-            //    int halfOfIRoundedDown = (int)Math.Floor(halfOfI);
-
-
-            //    foreach (int alreadyValidatedPrime in confirmedPrimesList)
-            //    {
-            //        int primeToModulusCurrentNumberWith = alreadyValidatedPrime;
-
-            //        if (halfOfIRoundedDown % primeToModulusCurrentNumberWith == 1)
-            //        {
-            //            confirmedPrimesList.Add(i);
-            //        }
-
-
-            //    }
-
-
-            //}
+            
             return Primes.ToList();
         }
     }

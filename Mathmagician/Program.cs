@@ -94,14 +94,7 @@ namespace Mathmagician
             
 
 
-            //Prime prime = new Mathmagician.Prime();
-            //var output = prime.CreatePrimeSequence(25);
-            //foreach (int number in output)
-            //{
-            //    Console.Write(number + " ");
-
-            //}
-            //Console.ReadKey();
+            
         }
 
     }
